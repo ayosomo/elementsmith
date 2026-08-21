@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "description": "Accessible component system and interactive playground built with browser-native technologies.",
-  "license": "MIT",
+  "license": "UNLICENSED",
   "repository": "https://github.com/ayosomo/elementsmith",
   "packageManager": "pnpm@11.19.0",
   "engines": {

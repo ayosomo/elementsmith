@@ -3,7 +3,7 @@
 ![ElementSmith social preview](./public/og.png)
 
 [![CI](https://github.com/ayosomo/elementsmith/actions/workflows/ci.yml/badge.svg)](https://github.com/ayosomo/elementsmith/actions/workflows/ci.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-dfff45.svg)](./LICENSE)
+[![Licence: Proprietary](https://img.shields.io/badge/Licence-Proprietary-dfff45.svg)](./LICENSE)
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES2023-e15c2e.svg)](https://developer.mozilla.org/docs/Web/JavaScript)
 
 ElementSmith is an accessible interface system and interactive component playground built with semantic HTML, modern CSS, vanilla JavaScript and native Web Components.
@@ -126,7 +126,10 @@ Security concerns should be reported using the private process in [SECURITY.md](
 
 ## Licence
 
-ElementSmith is available under the [MIT Licence](./LICENSE).
+Copyright (c) 2026 Olu Osomo. All rights reserved. This project is publicly
+available for portfolio review only. Use, copying, modification or
+distribution requires [prior written permission](./LICENSE) from the copyright
+holder.
 
 ---
 

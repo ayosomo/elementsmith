@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f4f1eb" />
+    <meta name="description" content="ElementSmith is an accessible, composable interface system and interactive component playground." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="ElementSmith — Build. Compose. Reuse." />
+    <meta property="og:description" content="An accessible, composable interface system and interactive component playground." />
+    <meta property="og:image" content="/og.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="ElementSmith — Build. Compose. Reuse." />
+    <meta name="twitter:description" content="An accessible, composable interface system and interactive component playground." />
+    <meta name="twitter:image" content="/og.png" />
+    <title>ElementSmith — Build. Compose. Reuse.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="ElementSmith home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span>Element<span>Smith</span></span>
+      </a>
+      <nav class="topnav" aria-label="Primary">
+        <a href="#components">Components</a>
+        <a href="#playground">Playground</a>
+        <a href="#accessibility">Accessibility</a>
+      </nav>
+      <div class="top-actions">
+        <button class="search-trigger" type="button"><span>Search components</span><kbd>⌘ K</kbd></button>
+        <button class="icon-button" id="themeToggle" type="button" aria-label="Switch colour theme">◐</button>
+      </div>
+    </header>
+
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Documentation">
+        <div class="sidebar-section">
+          <p>Get started</p>
+          <a class="active" href="#overview"><span>Overview</span></a>
+          <a href="#foundations"><span>Foundations</span></a>
+        </div>
+        <div class="sidebar-section">
+          <p>Components <small>18</small></p>
+          <a href="#buttons"><span>Buttons</span><em>6</em></a>
+          <a href="#inputs"><span>Inputs</span><em>7</em></a>
+          <a href="#navigation"><span>Navigation</span><em>4</em></a>
+          <a href="#overlays"><span>Overlays</span><em>4</em></a>
+          <a href="#feedback"><span>Feedback</span><em>6</em></a>
+          <a href="#data"><span>Data display</span><em>5</em></a>
+        </div>
+        <div class="sidebar-section">
+          <p>Resources</p>
+          <a href="#playground"><span>Playground</span><b class="status-dot"></b></a>
+          <a href="#accessibility"><span>Accessibility</span></a>
+        </div>
+        <div class="sidebar-note"><span>ES</span><div><strong>ElementSmith v1.0</strong><small>Framework-free release</small></div></div>
+      </aside>
+
+      <main id="main-content">
+        <section class="hero" id="overview">
+          <div class="eyebrow"><span></span> Interface craft, systemised</div>
+          <h1>Build with intent.<br /><em>Compose</em> with confidence.</h1>
+          <p>A carefully forged collection of accessible interface elements—designed to work together, built to make every product feel considered.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#components">Explore components <span>→</span></a>
+            <a class="button secondary" href="#playground">Open playground <span>↗</span></a>
+          </div>
+          <div class="system-stats" aria-label="System statistics">
+            <div><strong>18</strong><span>Components</span></div>
+            <div><strong>100%</strong><span>Keyboard ready</span></div>
+            <div><strong>0</strong><span>Dependencies</span></div>
+            <div><strong>AA</strong><span>Contrast target</span></div>
+          </div>
+        </section>
+
+        <section class="featured" id="components">
+          <div class="section-heading"><div><span class="kicker">Featured component</span><h2>One element. Every state.</h2></div><a href="#buttons">View all components <span>→</span></a></div>
+          <div class="workbench">
+            <div class="workbench-top"><div><span class="live-dot"></span>Live preview</div><span>Button / Primary</span></div>
+            <div class="preview-stage"><button class="demo-button" id="heroDemoButton" type="button"><span>Create project</span><b aria-hidden="true">→</b></button></div>
+            <div class="preview-controls" id="heroControls">
+              <fieldset><legend>Variant</legend><div class="segmented" data-control="variant"><button class="selected" data-value="primary" type="button">Primary</button><button data-value="outline" type="button">Outline</button><button data-value="ghost" type="button">Ghost</button></div></fieldset>
+              <fieldset><legend>Size</legend><div class="segmented" data-control="size"><button data-value="small" type="button">S</button><button class="selected" data-value="medium" type="button">M</button><button data-value="large" type="button">L</button></div></fieldset>
+            </div>
+          </div>
+        </section>
+
+        <section class="catalogue" id="buttons">
+          <div class="section-heading catalogue-heading">
+            <div><span class="kicker">The collection</span><h2>Elements, thoughtfully forged.</h2><p>Consistent anatomy. Predictable states. Clear intent.</p></div>
+            <div class="catalogue-filter" role="group" aria-label="Filter components">
+              <button class="selected" data-filter="all" type="button">All <span>12</span></button>
+              <button data-filter="input" type="button">Input <span>4</span></button>
+              <button data-filter="navigation" type="button">Navigation <span>3</span></button>
+              <button data-filter="feedback" type="button">Feedback <span>5</span></button>
+            </div>
+          </div>
+
+          <div class="component-grid" id="componentGrid">
+            <article class="component-card feature-card" data-category="input">
+              <div class="card-meta"><span>01</span><span>Input</span></div>
+              <div class="card-preview button-preview"><button type="button">Save changes <span>→</span></button><button class="outline-mini" type="button">Cancel</button></div>
+              <div class="card-copy"><div><h3>Button</h3><p>Trigger an action or event.</p></div><span>6 variants</span></div>
+            </article>
+
+            <article class="component-card" data-category="input">
+              <div class="card-meta"><span>02</span><span>Input</span></div>
+              <div class="card-preview input-preview"><label>Email address<input type="email" value="maker@studio.co" aria-label="Example email address" /></label><span>We’ll never share your email.</span></div>
+              <div class="card-copy"><div><h3>Text input</h3><p>Collect short-form information.</p></div><span>7 states</span></div>
+            </article>
+
+            <article class="component-card" data-category="input">
+              <div class="card-meta"><span>03</span><span>Input</span></div>
+              <div class="card-preview selection-preview"><label><input type="checkbox" checked /> <i></i><span>Product updates</span></label><label><input type="checkbox" /> <i></i><span>Weekly digest</span></label></div>
+              <div class="card-copy"><div><h3>Checkbox</h3><p>Select multiple options.</p></div><span>4 states</span></div>
+            </article>
+
+            <article class="component-card" data-category="input">
+              <div class="card-meta"><span>04</span><span>Input</span></div>
+              <div class="card-preview switch-preview"><div><span>High contrast</span><button class="switch" role="switch" aria-checked="true" type="button"><i></i></button></div><div><span>Reduce motion</span><button class="switch off" role="switch" aria-checked="false" type="button"><i></i></button></div></div>
+              <div class="card-copy"><div><h3>Switch</h3><p>Toggle a setting instantly.</p></div><span>3 sizes</span></div>
+            </article>
+
+            <article class="component-card" data-category="navigation">
+              <div class="card-meta"><span>05</span><span>Navigation</span></div>
+              <div class="card-preview tabs-preview"><div role="tablist" aria-label="Example tabs"><button class="active" role="tab" aria-selected="true" type="button">Overview</button><button role="tab" aria-selected="false" type="button">Usage</button><button role="tab" aria-selected="false" type="button">API</button></div><p data-tab-panel>Crafted for composition.</p></div>
+              <div class="card-copy"><div><h3>Tabs</h3><p>Navigate sibling views.</p></div><span>Arrow keys</span></div>
+            </article>
+
+            <article class="component-card" data-category="navigation">
+              <div class="card-meta"><span>06</span><span>Navigation</span></div>
+              <div class="card-preview dropdown-preview"><div class="dropdown"><button class="dropdown-trigger" aria-haspopup="listbox" aria-expanded="false" type="button">Sort: Newest <span>⌄</span></button><ul role="listbox" tabindex="-1" hidden><li role="option" aria-selected="true" tabindex="-1">Newest</li><li role="option" aria-selected="false" tabindex="-1">Oldest</li><li role="option" aria-selected="false" tabindex="-1">Popular</li></ul></div></div>
+              <div class="card-copy"><div><h3>Dropdown</h3><p>Select from a compact menu.</p></div><span>Keyboard ready</span></div>
+            </article>
+
+            <article class="component-card" data-category="navigation">
+              <div class="card-meta"><span>07</span><span>Navigation</span></div>
+              <div class="card-preview pagination-preview"><button aria-label="Previous page" type="button">←</button><button class="current" aria-current="page" type="button">1</button><button type="button">2</button><button type="button">3</button><span>…</span><button type="button">8</button><button aria-label="Next page" type="button">→</button></div>
+              <div class="card-copy"><div><h3>Pagination</h3><p>Move through long collections.</p></div><span>Compact</span></div>
+            </article>
+
+            <article class="component-card" data-category="feedback">
+              <div class="card-meta"><span>08</span><span>Feedback</span></div>
+              <div class="card-preview alert-preview"><div><b>✓</b><span><strong>Project published</strong><small>Your changes are now live.</small></span></div></div>
+              <div class="card-copy"><div><h3>Alert</h3><p>Surface important information.</p></div><span>4 tones</span></div>
+            </article>
+
+            <article class="component-card" data-category="feedback">
+              <div class="card-meta"><span>09</span><span>Feedback</span></div>
+              <div class="card-preview modal-preview"><button id="openModal" type="button">Open modal</button><span>Focus trapped · Esc closes</span></div>
+              <div class="card-copy"><div><h3>Modal</h3><p>Focus attention on a task.</p></div><span>Focus managed</span></div>
+            </article>
+
+            <article class="component-card" data-category="feedback">
+              <div class="card-meta"><span>10</span><span>Feedback</span></div>
+              <div class="card-preview progress-preview"><div><span><b>Uploading assets</b><small>72%</small></span><progress max="100" value="72">72%</progress></div></div>
+              <div class="card-copy"><div><h3>Progress</h3><p>Communicate task completion.</p></div><span>Determinate</span></div>
+            </article>
+
+            <article class="component-card" data-category="feedback">
+              <div class="card-meta"><span>11</span><span>Feedback</span></div>
+              <div class="card-preview skeleton-preview" aria-label="Loading content"><span></span><span></span><span></span></div>
+              <div class="card-copy"><div><h3>Skeleton</h3><p>Reserve space while loading.</p></div><span>3 shapes</span></div>
+            </article>
+
+            <article class="component-card" data-category="feedback">
+              <div class="card-meta"><span>12</span><span>Feedback</span></div>
+              <div class="card-preview toast-preview"><button id="showToast" type="button">Show notification <span>↗</span></button></div>
+              <div class="card-copy"><div><h3>Toast</h3><p>Confirm a background action.</p></div><span>Live region</span></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="playground-section" id="playground">
+          <div class="section-heading playground-heading"><div><span class="kicker">Component playground</span><h2>Shape the element.<br />Keep the contract.</h2></div><p>Adjust a native Web Component in real time. Every control updates the preview and produces copy-ready HTML.</p></div>
+          <div class="playground-shell">
+            <div class="playground-preview">
+              <div class="panel-bar"><span><i></i> Preview</span><div><button data-stage="light" class="active" type="button" aria-label="Light preview background">○</button><button data-stage="dark" type="button" aria-label="Dark preview background">●</button></div></div>
+              <div class="playground-stage" id="playgroundStage"><es-button id="playgroundButton" variant="primary" size="medium" icon>Create project</es-button></div>
+              <div class="code-panel"><div><span>HTML</span><button id="copyCode" type="button"><i>□</i> Copy code</button></div><pre><code id="generatedCode"></code></pre></div>
+            </div>
+
+            <form class="property-panel" id="propertyForm">
+              <div class="panel-bar"><span>Properties</span><small>Button</small></div>
+              <fieldset><legend>Variant</legend><div class="radio-grid">
+                <label><input type="radio" name="variant" value="primary" checked /><span><i class="swatch primary-swatch"></i>Primary</span></label>
+                <label><input type="radio" name="variant" value="secondary" /><span><i class="swatch secondary-swatch"></i>Secondary</span></label>
+                <label><input type="radio" name="variant" value="outline" /><span><i class="swatch outline-swatch"></i>Outline</span></label>
+                <label><input type="radio" name="variant" value="ghost" /><span><i class="swatch ghost-swatch"></i>Ghost</span></label>
+                <label><input type="radio" name="variant" value="danger" /><span><i class="swatch danger-swatch"></i>Danger</span></label>
+              </div></fieldset>
+              <fieldset><legend>Size</legend><div class="size-options">
+                <label><input type="radio" name="size" value="small" /><span>Small</span></label>
+                <label><input type="radio" name="size" value="medium" checked /><span>Medium</span></label>
+                <label><input type="radio" name="size" value="large" /><span>Large</span></label>
+              </div></fieldset>
+              <fieldset><legend>Content</legend><label class="text-control"><span>Label</span><input name="label" value="Create project" maxlength="28" /></label></fieldset>
+              <fieldset><legend>State</legend><div class="toggle-row"><span>Show icon<small>Add directional affordance</small></span><label class="toggle-control"><input type="checkbox" name="icon" checked /><i></i></label></div><div class="toggle-row"><span>Loading<small>Communicate pending action</small></span><label class="toggle-control"><input type="checkbox" name="loading" /><i></i></label></div><div class="toggle-row"><span>Disabled<small>Prevent interaction</small></span><label class="toggle-control"><input type="checkbox" name="disabled" /><i></i></label></div></fieldset>
+              <button class="reset-properties" type="reset">↺ Reset properties</button>
+            </form>
+          </div>
+        </section>
+
+        <section class="accessibility-section" id="accessibility">
+          <div class="accessibility-intro"><span class="kicker">Accessibility by default</span><h2>Good interfaces include everyone.</h2><p>Interaction isn’t an enhancement. Every element is designed around focus, semantics, contrast and predictable keyboard behaviour from the first line.</p><div class="principle-tags"><span>WCAG 2.2 AA</span><span>Screen-reader labels</span><span>Reduced motion</span><span>Visible focus</span></div></div>
+          <div class="keyboard-card">
+            <div class="keyboard-head"><span>Keyboard interaction map</span><small>Dropdown</small></div>
+            <ol>
+              <li><kbd>Enter</kbd><span><strong>Open menu</strong><small>Focus moves to selected option</small></span><b>01</b></li>
+              <li><kbd>↓</kbd><span><strong>Next item</strong><small>Moves through available options</small></span><b>02</b></li>
+              <li><kbd>↑</kbd><span><strong>Previous item</strong><small>Wraps from first to last</small></span><b>03</b></li>
+              <li><kbd>Enter</kbd><span><strong>Select item</strong><small>Applies value and closes menu</small></span><b>04</b></li>
+              <li><kbd>Esc</kbd><span><strong>Close menu</strong><small>Returns focus to trigger</small></span><b>05</b></li>
+            </ol>
+          </div>
+        </section>
+
+        <footer>
+          <div class="footer-brand"><a class="brand" href="#"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>Element<span>Smith</span></span></a><p>Build. Compose. Reuse.</p></div>
+          <p>Native Web Components.<br />Forged with HTML, CSS & JavaScript.</p>
+          <a href="#overview">Back to top ↑</a>
+        </footer>
+      </main>
+    </div>
+
+    <dialog class="modal-dialog" id="demoModal" aria-labelledby="modalTitle">
+      <form method="dialog">
+        <div class="modal-icon">◆</div>
+        <button class="modal-close" value="cancel" aria-label="Close modal">×</button>
+        <span class="kicker">Create a component</span>
+        <h2 id="modalTitle">Start with a clear contract.</h2>
+        <p>Name the element by what it does, define its states, then make the accessible path the default path.</p>
+        <label>Component name<input autofocus value="Command menu" /></label>
+        <div class="modal-actions"><button value="cancel" class="button secondary">Cancel</button><button value="confirm" class="button primary">Create element →</button></div>
+      </form>
+    </dialog>
+
+    <dialog class="search-dialog" id="searchDialog" aria-label="Search components">
+      <div class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Search components…" autocomplete="off" /><kbd>Esc</kbd></div>
+      <div class="search-results" id="searchResults"></div>
+    </dialog>
+
+    <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true" hidden><b>✓</b><span><strong>Copied to clipboard</strong><small>Your component markup is ready.</small></span><button type="button" aria-label="Dismiss notification">×</button></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

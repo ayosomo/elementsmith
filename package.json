@@ -2,16 +2,26 @@
   "name": "elementsmith",
   "version": "0.1.0",
   "private": true,
+  "description": "Accessible component system and interactive playground built with browser-native technologies.",
+  "license": "MIT",
+  "repository": "https://github.com/ayosomo/elementsmith",
+  "packageManager": "pnpm@11.19.0",
   "engines": {
     "node": ">=22.13.0"
   },
   "scripts": {
     "dev": "vite --config vite.config.js --host 0.0.0.0",
     "build": "vite --config vite.config.js build",
-    "preview": "vite --config vite.config.js preview --host 0.0.0.0"
+    "preview": "vite --config vite.config.js preview --host 0.0.0.0",
+    "lint": "eslint .",
+    "test": "node --test",
+    "quality": "pnpm run lint && pnpm run test && pnpm run build"
   },
   "dependencies": {},
   "devDependencies": {
+    "@eslint/js": "9.39.4",
+    "eslint": "9.39.4",
+    "globals": "16.4.0",
     "vite": "8.0.13"
   },
   "type": "module"

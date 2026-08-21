@@ -1,0 +1,64 @@
+name: Bug report
+description: Report a reproducible problem with ElementSmith.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for helping improve ElementSmith. Please provide a focused reproduction.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Problem summary
+      description: What happened, and what did you expect instead?
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps
+      placeholder: |
+        1. Open...
+        2. Activate...
+        3. Observe...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: input
+    attributes:
+      label: Input method
+      options:
+        - Mouse or touch
+        - Keyboard
+        - Screen reader
+        - Other assistive technology
+        - Not input-specific
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Browser and operating system
+      placeholder: Firefox 142 on Windows 11
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Add screenshots or reduced examples when useful. Do not include sensitive information.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Initial checks
+      options:
+        - label: I searched existing issues for the same problem.
+          required: true
+        - label: I have not included credentials or sensitive information.
+          required: true

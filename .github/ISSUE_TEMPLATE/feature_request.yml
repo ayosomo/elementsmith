@@ -1,0 +1,44 @@
+name: Feature request
+description: Propose an improvement aligned with ElementSmith's goals.
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: Describe the user or engineering need before suggesting an implementation.
+    validations:
+      required: true
+
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired outcome
+      description: What should become possible, clearer or more accessible?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed approach
+      description: Include API, interaction or visual examples when relevant.
+
+  - type: textarea
+    id: accessibility
+    attributes:
+      label: Accessibility considerations
+      description: Consider semantics, keyboard behaviour, focus, announcements and motion.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope check
+      options:
+        - label: This proposal aligns with the published project plan.
+          required: true
+        - label: I searched for an existing request covering this outcome.
+          required: true

@@ -8,6 +8,15 @@ importers:
 
   .:
     devDependencies:
+      '@eslint/js':
+        specifier: 9.39.4
+        version: 9.39.4
+      eslint:
+        specifier: 9.39.4
+        version: 9.39.4(jiti@2.7.0)(supports-color@10.2.2)
+      globals:
+        specifier: 16.4.0
+        version: 16.4.0
       vite:
         specifier: 8.0.13
         version: 8.0.13(@types/node@22.19.19)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.50.0)(tsx@4.23.12)

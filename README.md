@@ -1,12 +1,19 @@
 # ElementSmith — Build. Compose. Reuse.
 
-![ElementSmith social preview](./public/og.png)
+![ElementSmith component playground](./docs/images/elementsmith-playground.png)
 
 [![CI](https://github.com/ayosomo/elementsmith/actions/workflows/ci.yml/badge.svg)](https://github.com/ayosomo/elementsmith/actions/workflows/ci.yml)
 [![Licence: Proprietary](https://img.shields.io/badge/Licence-Proprietary-dfff45.svg)](./LICENSE)
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES2023-e15c2e.svg)](https://developer.mozilla.org/docs/Web/JavaScript)
 
 ElementSmith is an accessible interface system and interactive component playground built with semantic HTML, modern CSS, vanilla JavaScript and native Web Components.
+
+| | |
+| --- | --- |
+| **Live demo** | [Open ElementSmith](https://ayosomo.github.io/elementsmith/) |
+| **Stack** | Semantic HTML, modern CSS, JavaScript, Web Components, Vite |
+| **Tests** | Node test runner, ESLint, production build verification |
+| **Deployment** | GitHub Pages, gated by GitHub Actions |
 
 This is an independent portfolio project created as part of my professional transition into frontend development. Its purpose is to demonstrate that high-quality interface engineering is about more than visual polish: it also requires clear APIs, predictable state, accessibility, maintainability and deliberate technical decisions.
 
